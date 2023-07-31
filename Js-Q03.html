@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>Prac</title>
+
+<script>
+function a()
+{	
+	document.bgColor="purple";
+	document.fgColor="pink";
+}
+
+function b()
+{	
+	document.bgColor="gray";
+}
+function c()
+{	
+	document.bgColor="blue";
+}
+function d()
+{	
+	document.bgColor="white";
+}
+
+
+</script>
+
+	<title>Javascript</title>
+</head>
+
+<body>
+<form name="log">
+
+
+<table id="myTable">
+    <tr>
+        <td>Row1 cell1</td>
+        <td>Row2 cell2</td>
+    </tr>
+<tr>
+        <td>Row1 cell1</td>
+        <td>Row2 cell2</td>
+    </tr>
+
+<input type="button" name="cl" value="click" onmouseover="a()" onmouseout="d()">
+<br><br>
+</table>
+
+<input type="button" name="cl" value="click" onmouseover="b()" onmouseout="d()">
+<br><br>
+<button onclick="addRow()">Add Row</button>
+
+<input type="button" name="cl" value="click" onmouseover="c()" onmouseout="d()">
+	<script>
+		function addRow() {
+			// Get a reference to the table
+			let table = document.getElementById('myTable');
+
+</form>
+</body>
+			// Create new row and cells
+			let newRow = table.insertRow(-1); // -1 means the new row will be inserted at the last position
+			let cell1 = newRow.insertCell(0);
+			let cell2 = newRow.insertCell(1);
+
+			// Add some text to the new cells:
+			cell1.innerHTML = "Row1 cell1";
+			cell2.innerHTML = "Row2 cell2";
+		}
+	</script>
+
+
+</body>
+</html>
